@@ -96,6 +96,7 @@ nav .dropdown-menu {
   background-color: rgb(255, 234, 46);
 }
 
+
 nav .dropdown-menu > li > a:hover,
 nav .dropdown-menu > li > a:focus {
     background-color: rgb(250, 195, 0) !important;
@@ -125,6 +126,7 @@ nav.navbar {
   z-index: 2;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.176);
+  background-image: linear-gradient(to bottom, rgb(255, 234, 46) 0px, rgb(248, 227, 38) 100%);
 }
 @media screen and (max-width: 767px) {
   nav.navbar {
