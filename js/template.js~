@@ -1,0 +1,47 @@
+(function () {
+
+	function fixNavigation()
+	{
+	    if(typeof pathPrefix === 'undefined')
+		pathPrefix = "../";
+	    
+	    $(".navbar").find("a").each(function() {
+	       var href=$(this).attr("href");
+	       if(href !== undefined && href !== null && href != "")
+	       {
+		  //ALPHA *( ALPHA / DIGIT / "+" / "-" / "." )
+		  //protocol not given, path not given,hash not given:
+		  if(! /^[a-zA-Z][a-zA-Z0-9\+\-\.]*\:/.test(href) && href.indexOf('/') != 0 && href.indexOf('#') != 0)
+		  {
+			$(this).attr("href", pathPrefix + href);
+		  }
+		  
+	       }
+	    });
+	    //TODO: add attr active to selected node class="active"
+
+	    $(".navbar").find("img").each(function() {
+	       var href=$(this).attr("src");
+	       if(href !== undefined && href !== null && href != "")
+	       {
+		  //ALPHA *( ALPHA / DIGIT / "+" / "-" / "." )
+		  //protocol not given, path not given,hash not given:
+		  if(! /^[a-zA-Z][a-zA-Z0-9\+\-\.]*\:/.test(href) && href.indexOf('/') != 0 && href.indexOf('#') != 0)
+		  {
+			$(this).attr("src", pathPrefix + href);
+		  }
+		  
+	       }
+	    });
+	}
+
+	if(typeof pathPrefix === 'undefined')
+		pathPrefix = "../";
+	var html=$('.page-content').html();
+	var title = document.title;
+	$('body').load(pathPrefix + 'template/template.html', function() {
+	  $('.page-content').append(html);
+          fixNavigation();
+	});
+
+})();

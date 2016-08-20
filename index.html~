@@ -1,0 +1,14 @@
+<html>
+<head>
+<script type='text/javascript'>
+var pathPrefix='';
+</script>
+<script type='text/javascript' src='js/styles.js'></script>
+</head>
+<body>
+<div class='page-content'>
+This is test content...
+</div>
+<script type='text/javascript' src='js/scripts.js'></script>s
+</body>
+</html>

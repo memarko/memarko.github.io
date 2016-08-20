@@ -1,0 +1,19 @@
+.navbar {
+   margin-bottom: 0px;
+}
+body > .alert {
+   margin-bottom: 0px;
+}
+img.logo {
+   display: inline;
+   width:19px;
+   height:19px;
+   margin-right:10px;
+}
+.img-spacing {
+	margin-right:20px;
+}
+.vertical-spacing {
+	margin-top:10px;
+	margin-bottom:20px;
+}

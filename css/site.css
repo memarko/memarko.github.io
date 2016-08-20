@@ -1,0 +1,144 @@
+
+body > div > .alert {
+  margin-bottom: 0px;
+}
+body > div {
+  margin-top: 53px;
+}
+
+@media screen and (max-width: 1146px) {
+  body > div {
+    margin-top: 103px;
+  }
+}
+
+@media screen and (max-width: 822px) {
+  body > div {
+    margin-top: 153px;
+  }
+}
+
+
+img.logo {
+   display: inline;
+   width:19px;
+   height:19px;
+   margin-right:10px;
+}
+.img-spacing {
+	margin-right:20px;
+}
+.vertical-spacing {
+	margin-top:10px;
+	margin-bottom:20px;
+}
+.page-content{
+	margin-top: 10px;
+}
+.page-menu-dropdown {
+  display: inline;
+}
+figure {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+figcaption {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.preview .thumbnail {
+  cursor: pointer;
+}
+.preview .thumbnail:hover {
+  background-color: #F0F0F0;
+}
+
+.search-result .thumbnail {
+  cursor: pointer;
+}
+.search-result .thumbnail:hover {
+  background-color: #F0F0F0;
+}
+.search-result .highlight {
+  background-color: #FFFF00;
+}
+
+.navbar {
+   margin-bottom: 0px;
+}
+nav li.open > a,
+nav li.open > a:hover  {
+  background-color: rgb(250, 195, 0) !important;
+  background-image: linear-gradient(rgb(250, 180, 0) 0px, rgb(250, 210, 0) 100%) !important;
+}
+nav li.selected > a,
+nav li.selected > a:hover  {
+  background-color: rgb(250, 165, 0) !important;
+  background-image: linear-gradient(rgb(250, 150, 0) 0px, rgb(250, 180, 0) 100%) !important;
+}
+nav .form-control {
+  background-color: #FF9;
+}
+
+nav .form-control:focus {
+  background-color: #FFA;
+}
+
+
+nav .btn-default:hover,
+nav .btn-default:focus {
+    background-color: #e0e000;
+    background-position: 0 -15px;
+}
+
+nav .dropdown-menu {
+  background-color: rgb(255, 234, 46);
+}
+
+nav .dropdown-menu > li > a:hover,
+nav .dropdown-menu > li > a:focus {
+    background-color: rgb(250, 195, 0) !important;
+    background-image: linear-gradient(rgb(250, 180, 0) 0px, rgb(250, 210, 0) 100%) !important;
+}
+nav .btn-default {
+  background-color: rgb(255,255,0);
+  background-image:-webkit-linear-gradient(top, #ff0 0, #e0e000 100%);
+	background-image:-o-linear-gradient(top, #ff0 0, #e0e000 100%);
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #ff0), to(#e0e000));
+	background-image:linear-gradient(to bottom, #fff 0, #e0e000 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff00ff', endColorstr='#ffe000e0', GradientType=0);
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	background-repeat:repeat-x;
+
+}
+
+nav .navbar-toggle:hover,
+nav .navbar-toggle:focus {
+    background-color: rgb(250, 195, 0) !important;
+}
+
+nav.navbar {
+  position: fixed;
+  top:0px;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.176);
+}
+@media screen and (max-width: 767px) {
+  nav.navbar {
+    position: relative;
+
+  }
+  nav .navbar-collapse {
+    overflow: hidden;
+  }
+
+  body > div  {
+    margin-top: 0px;
+  }
+}
+/*nav li:hover {
+  background-color: rgb(231, 231, 231);
+}*/
