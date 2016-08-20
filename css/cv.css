@@ -1,5 +1,6 @@
 .thumbnail {
 	float: left;
+	border-top:20px;
 	margin-right:20px;
 }
 .page-content > .panel-group {
