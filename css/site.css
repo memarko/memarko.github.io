@@ -2,8 +2,19 @@
 body > div > .alert {
   margin-bottom: 0px;
 }
+
+body > div > .container {
+  background-color: white !important;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
 body > div {
   margin-top: 53px;
+
+}
+body {
+  background-color: rgb(255, 253, 200);
 }
 
 @media screen and (max-width: 1146px) {
@@ -64,6 +75,12 @@ figcaption {
   background-color: #FFFF00;
 }
 
+figure img {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 4px;
+  border-radius: 4px;
+}
+
 .navbar {
    margin-bottom: 0px;
 }
@@ -78,11 +95,11 @@ nav li.selected > a:hover  {
   background-image: linear-gradient(rgb(250, 150, 0) 0px, rgb(250, 180, 0) 100%) !important;
 }
 nav .form-control {
-  background-color: #FF9;
+  background-color: rgb(255, 253, 200);
 }
 
 nav .form-control:focus {
-  background-color: #FFA;
+  background-color: rgb(255, 253, 200);
 }
 
 

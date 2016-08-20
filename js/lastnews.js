@@ -7,7 +7,7 @@ function showLastNews()
         var h1 = $(data).find('h1').text();
         var img = $(data).find('img').attr('src');
         img = 'html/'+img;
-        var text = $(data).filter('.page-content').text();
+        var text = $(data).find('.page-content').text();
         text = text.trim().replace(title,"");
         text = text.trim().replace(h1,"");
         text = text.replace(/\s+/g," ");

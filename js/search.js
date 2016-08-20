@@ -54,7 +54,7 @@ $(document).ready(function() {
     //check words
     var title = $(data).filter('title').text();
     var h1 = $(data).find('h1').text();
-    var text = $(data).filter('.page-content').text();
+    var text = $(data).find('.page-content').text();
     text = text.trim().replace(title,"");
     text = text.trim().replace(h1,"");
     text = text.replace(/\s+/g," ");
