@@ -60,6 +60,11 @@ figcaption {
 
 .preview .thumbnail {
   cursor: pointer;
+  text-align: center;
+}
+.preview .thumbnail img {
+  height: 200px;
+  width: auto;
 }
 .preview .thumbnail:hover {
   background-color: #F0F0F0;
@@ -87,11 +92,13 @@ figure img {
 nav li.open > a,
 nav li.open > a:hover  {
   background-color: rgb(250, 195, 0) !important;
+  background-image: -webkit-linear-gradient(top, rgb(250, 150, 0) 0, rgb(250, 180, 0) 100%) !important;
   background-image: linear-gradient(rgb(250, 180, 0) 0px, rgb(250, 210, 0) 100%) !important;
 }
 nav li.selected > a,
 nav li.selected > a:hover  {
   background-color: rgb(250, 165, 0) !important;
+  background-image: -webkit-linear-gradient(top, rgb(250, 150, 0) 0, rgb(250, 180, 0) 100%) !important;
   background-image: linear-gradient(rgb(250, 150, 0) 0px, rgb(250, 180, 0) 100%) !important;
 }
 nav .form-control {
