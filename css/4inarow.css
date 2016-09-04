@@ -13,6 +13,7 @@
   background-image: url(../img/token-white.png);
   background-repeat: no-repeat;
   background-position: center center;
+  cursor: pointer;
 }
 .play-board td:first-child,
 .play-board th.btn:first-child
@@ -44,6 +45,7 @@ td.token-mark {
   background-color:white;
   margin-bottom: 20px;
   border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px !important;
 }
 .page-content.container table {
   background-color:lightGray;
