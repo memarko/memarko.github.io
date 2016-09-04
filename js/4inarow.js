@@ -114,10 +114,24 @@ function play(x)
   if(y >= 0)
   {
     board[x][y]=player;
-    $(".play-board tr").eq(y)
-      .find("td").eq(x).addClass(
-        player > 0 ? "token-red": "token-blue"
-    );
+    falling(x,0);
+  }
+}
+//display falling token
+function falling(x,y) {
+  disable = true;
+  $(".play-board tr").eq(y-1).find("td").eq(x)
+    .removeClass("token-red")
+    .removeClass("token-blue");
+  $(".play-board tr").eq(y).find("td").eq(x)
+    .addClass(player > 0 ? "token-red": "token-blue");
+  if(heights[x]>y)
+  {
+    setTimeout(function(){falling(x,y+1)},25);
+  }
+  else
+  {
+    disable = false;
     heights[x]--;
     total--;
     if(check(x,y) != 0)
@@ -133,10 +147,6 @@ function play(x)
     }
     player = -player;
   }
-}
-function falling(x) {
-  setTimeout(falling,10);
-
 }
 //click on field
 $(document).ready(function() {
