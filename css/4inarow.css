@@ -1,0 +1,50 @@
+.play-board td,
+.play-board th.btn
+{
+  height: 36px;
+  width: 36px;
+  padding: 3px;
+  display: table-cell;
+  border-left: 1px solid rgba(0, 0, 0, 0.15) !important;
+
+}
+.play-board td
+{
+  background-image: url(../img/token-white.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.play-board td:first-child,
+.play-board th.btn:first-child
+{
+  border-left: none !important;
+}
+
+td.token-blue {
+  background-image: url(../img/token-blue.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.token-red {
+  background-image: url(../img/token-red.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+td.token-mark {
+  background-color: #FFFF00;
+}
+
+.page-content.container {
+  border: none !important;
+  background-color:transparent !important;
+}
+.page-content.container div,
+.page-content.container table
+ {
+  background-color:white;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.page-content.container table {
+  background-color:lightGray;
+}
