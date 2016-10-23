@@ -1,5 +1,5 @@
 (function () {
-    var js=['js/jquery.js', 'js/bootstrap.js','js/site.js','js/template.js'];
+    var js=['js/jquery.js', 'js/bootstrap.js','js/site.js','js/layout.js'];
 
     var root="index.html";
 

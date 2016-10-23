@@ -70,7 +70,7 @@
 	var html=$('.page-content').html();
 	var title = document.title;
 
-	$('body').load(pathPrefix + 'template/template.html', function(data) {
+	$('body').load(pathPrefix + 'layout/layout.html', function(data) {
 		if(typeof title != 'undefined' && title != null && title != "")
 			document.title = $(data).filter("title").text() + " - " + title;
 
