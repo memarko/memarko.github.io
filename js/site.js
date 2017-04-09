@@ -195,6 +195,10 @@ function writeCookie(key, value)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-96992492-1', 'auto');
   ga('set', 'forceSSL', true);
+  function getUserConsentState()
+  {
+    return false;
+  }
   if(getUserConsentState() === true){
     ga('require', 'displayfeatures');
     ga('set', 'anonymizeIp', undefined);
@@ -203,4 +207,4 @@ function writeCookie(key, value)
     ga('set', 'displayFeaturesTask', null);
     ga('set', 'anonymizeIp', true);
   }
-  ga('send', 'pageview');
+ga('send', 'pageview');
